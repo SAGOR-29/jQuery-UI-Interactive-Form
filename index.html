@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQuery Signup</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	
+	<div class="signup">
+		<div class="signup-text">
+			<p>jQuery UI Interactive Form</p>
+		</div><!-- /.signup-text -->
+
+		<div class="alert-msg">
+			<div class="alert alert-success alert-dismissable" style="display:none;">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				<strong>Success!</strong> Registration Successful.
+			</div>
+			<div id="common-alert" class="alert alert-danger alert-dismissable" style="display:none;">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				<strong>Error!</strong> Field must not be empty.
+			</div>
+			<div id="name-alert" class="alert alert-danger alert-dismissable" style="display:none;">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				<strong>Error!</strong> Name must be minimum 4 characters long
+			</div>
+
+			<div id="pass-alert" class="alert alert-danger alert-dismissable" style="display:none;">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				<strong>Error!</strong> Password must be minimum 5 characters long
+			</div>
+			<div id="email-alert" class="alert alert-danger alert-dismissable" style="display:none;">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				<strong>Error!</strong> Invalid Email Address
+			</div>
+			<div id="email-length-alert" class="alert alert-danger alert-dismissable" style="display:none;">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				<strong>Error!</strong> Email must be minimum 5 characters long
+			</div>
+			<div id="check-alert" class="alert alert-danger alert-dismissable" style="display:none;">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				<strong>Error!</strong> You must accept the aggrement
+			</div>
+			<div id="gender-alert" class="alert alert-danger alert-dismissable" style="display:none;">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				<strong>Error!</strong> Choose your gender
+			</div>
+		</div><!-- /.alert -->
+		<div class="segments">
+			<div class="segment1">
+				<div class="form-group">
+					<input type="email" class="form-control" id="email" placeholder="Email Address" />
+				</div><!-- /.form-group -->
+				<div class="form-group">
+					<input type="text" class="form-control" id="fname" placeholder="First Name" />
+				</div><!-- /.form-group -->
+				<div class="form-group">
+					<input type="text" class="form-control" id="lname" placeholder="Last Name" />
+				</div><!-- /.form-group -->	
+				<div class="form-group">
+					<input type="text" class="form-control" id="name" placeholder="Full Name" disabled />
+				</div><!-- /.form-group -->		
+			</div><!-- /.segment1 -->
+
+			<div class="segment2">
+				<div class="form-group">
+					<input type="password" class="form-control" id="pass"  placeholder="Password" />
+				</div><!-- /.form-group -->
+				<div class="form-group">
+					<input type="password" class="form-control" id="cpass"  placeholder="Confirm Password" />
+				</div><!-- /.form-group -->
+			</div><!-- /.segment2 -->
+
+			<div class="segment3">
+				<div class="gender">
+					<label>Gender</label>
+					<div class="gender-image">
+						<i class="fa fa-male male"></i>
+						<i class="fa fa-female female"></i>
+					</div><!-- /.gender-image -->
+					<div class="gender-drop">
+						<label for="gender">Place Here</label>
+						<div class="dropbox"></div><!-- /.dropbox -->
+					</div><!-- /.gender-drop -->
+				</div><!-- /.gender -->
+			</div><!-- /.segment-3 -->
+		</div><!-- /.segments -->
+
+		<div class="segment4">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" id="check"> I accept the <a href="index.html">licence aggrement</a>
+				</label>
+			</div>
+			<div class="button">
+				<button id="submit" class="btn btn-success btn-lg">Submit</button>
+			</div><!-- /.button -->
+		</div><!-- /.segment-4 -->
+	</div><!-- /.signup -->
+	
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

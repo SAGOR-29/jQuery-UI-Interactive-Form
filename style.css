@@ -1,0 +1,77 @@
+body{
+	background-color: lightblue;
+}
+
+.signup-text {
+	color: red;
+}
+.signup-text p{
+	text-align: center;
+	padding: 15px;
+	/*border: 2px solid gray;*/
+	width: 300px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	font-weight: bold;
+
+}
+
+.signup{
+	width: 600px;
+	padding: 40px;
+	margin: 50px auto;
+	/*border: 2px solid gray;*/
+}
+
+input[type='text'], input[type='email'], input[type='password']{
+	border-radius: 0;
+}
+
+.button{
+	/*text-align: center;*/
+	margin-top: 30px;
+}
+
+.segment1{
+	border: 2px solid gray;
+	padding: 20px;
+	margin-bottom: 30px;
+	background: #fff;
+}
+
+.segment2{
+	border: 2px solid gray;
+	padding: 20px;
+	margin-bottom: 30px;
+	background: #fff;
+}
+
+.segment3{
+	border: 2px solid gray;
+	padding: 20px;
+	margin-bottom: 30px;
+	background: #fff;
+}
+
+
+.gender-image{
+	padding: 20px;
+	padding-left: 0;
+
+}
+
+.fa{
+	padding: 15px;
+	border: 2px solid gray;
+	margin-right: 15px;
+	font-size: 30px;
+	background-color: #fff;
+}
+
+.dropbox{
+	height: 80px;
+	width: 70px;
+	border: 2px solid gray;
+	padding: 15px;
+
+}
